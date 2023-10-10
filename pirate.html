@@ -194,40 +194,29 @@ let rowDifference = 0;
 let colDifference = 0;
 
 if (treasureRow > lastRow) {
-
-    rowDifference = treasureRow - lastRow;
+rowDifference = treasureRow - lastRow;
   }
 
 else {
-
-    rowDifference = lastRow - treasureRow;
+      rowDifference = lastRow - treasureRow;
 }
-
 if (treasureCol > lastCol) {
-
-    colDifference = treasureCol - lastCol;
-
+   colDifference = treasureCol - lastCol;
 }
-
 else {
-
-    colDifference = lastCol - treasureCol;
+      colDifference = lastCol - treasureCol;
 }
 if (lastRow - treasureRow == 1 || lastRow - treasureRow == 1 || lastCol - treasureCol == 1 || lastCol - treasureCol == -1) {
-
     result = "Can smell it";
 }
 
 else if (rowDifference + colDifference == 2) {
-
-    result = "Close Matie";
+  result = "Close Matie";
 }
-
 else {
   result = "Step Faster";
 
 }
-
 penalty = penalty + 2;
 document.getElementById("penalty").innerHTML = "Penalty is " + penalty + ".";
 document.getElementById("help").innerHTML = result;

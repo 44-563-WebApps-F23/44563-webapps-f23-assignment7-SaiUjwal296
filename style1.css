@@ -1,0 +1,22 @@
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+h1{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 1px 1px 1px 1px 1px black;
+}
+
+div{
+    font-weight: bold;
+    margin: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}

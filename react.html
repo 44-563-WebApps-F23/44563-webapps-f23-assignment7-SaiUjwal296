@@ -8,15 +8,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
 </head>
 <body>
 <h1>Ujwal speed check</h1>
  <br>
 <div id="target">Your time</div>
 <div id="counter">Count</div>
-<button type="button" class="btn btn-success" onclick="startTime()" style="color: greenyellow;"><b>Start Timer</b></button>
-<button type="button" class="btn btn-warning" onclick="recordTime()"><b>React</b></button>
+<button type="button" class="btn btn-success" onclick="startTime()" style="color:violet;"><b>Start Timer</b></button>
+<button type="button" class="btn btn-warning" onclick="recordTime()" style="color:blue;"><b>React</b></button>
 
   <script>
 let reactTime = undefined;
@@ -26,7 +26,8 @@ function recordTime()
   console.log(reactTime);
 }
      function startTime() {
-      
+      var countdown = Math.floor(Math.random()*9) +2
+      var y = countdown*1000
       for(let i = 0; i < 9; i++) {
       setTimeout(() => {
  document.getElementById("counter").innerHTML = i;

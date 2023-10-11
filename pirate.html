@@ -80,10 +80,11 @@
         <p>Click on the locations to search for treasure, beware the traps</p>
         <p id="locations">Number of locations checked is zero.</p>
         <p id="penalty">Penalty is zero.</p>
-        <p>Click for help.</p>
+        <p class="lead" style="background-color: olive" onclick="help()"><b>Click for help</b></p>
         <p id="help">Help report</p>
     
 </div>
+<button type="button" class="button" onclick="resetgame()"><b>NewGame</b></button>
 <div class="container">
 <div class="row">
   <div class="col">
@@ -147,6 +148,8 @@
   var lastCheck = 0;
   var treasureLocation = 5;
   var trapLocation = 18;
+  var treasureLocation = Math.floor(Math.random()*25);
+  var trapLocation = Math.floor(Math.random() *25);
   var gameOver = false;
 
   function check(position)
@@ -183,8 +186,8 @@
       lastCheck = position;
   };
 
+ 
   function help() {
-
 let lastRow = parseInt((lastCheck / 5), 10);
 let treasureRow = parseInt((treasureLocation / 5), 10);
 let result = " ";
@@ -220,7 +223,17 @@ else {
 penalty = penalty + 2;
 document.getElementById("penalty").innerHTML = "Penalty is " + penalty + ".";
 document.getElementById("help").innerHTML = result;
-
+}
+function resetgame(){
+  treasureLocation=Math.floor(Math.random() * 25);
+  trapLocation = Math.floor(Math.random() * 25);
+  checkCount = 0;
+  penalty = 0;
+  document.getElementById("locations").innerHTML = "Number of loactions checked is zero";
+  document.getElementById("penalty").innerHTML = "penalty is zero";
+  for(let i=0;i<25;i++){
+    document.getElementById(ids[i]).src = "hidden treasure.jpg"
+  }
 }
 </script>
 </body>

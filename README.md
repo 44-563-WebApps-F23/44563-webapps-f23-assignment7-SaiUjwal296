@@ -6,7 +6,7 @@ An assignment on java script modifying the DOM and using anonymous callback func
 [GitHubPages:](https://github.com/44-563-WebApps-F23/44563-webapps-f23-assignment7-SaiUjwal296/settings/pages)
 <br>
 
-[HostedAt:]
+
 <br>
 
 [Pirate:](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-SaiUjwal296/pirate.html)
